@@ -208,7 +208,7 @@ button{
 }
 
 .home__description{
-    text-align: justify;
+    text-align: left;
     color: var(--text-color-light);
     margin-bottom: 2rem;
 }
@@ -319,6 +319,11 @@ button{
     row-gap: 1.5rem;
 }
 
+.service__accordion-head{
+    font-size: var(--small-font-size);
+    padding: 1.25rem 2.5rem 0 2.75rem;
+}
+
 .service__accordion-item{
     background-color: var(--body-color);
     border: 2px solid var(--border-color);
@@ -364,12 +369,19 @@ button{
 .service__accordion-description{
     font-size: var(--small-font-size);
     padding: 1.25rem 2.5rem 0 2.75rem;
+    text-align: left;
 }
 
 .service__accordion-content{
     overflow: hidden;
     height: 0;
     transition: all .25s ease;
+}
+
+.service__accordion-list{
+    list-style-type: disc;
+    font-size: var(--small-font-size);
+    padding: .1rem 2.5rem 0 3.75rem;
 }
 
 /*Rotate service icon and add shadows*/
