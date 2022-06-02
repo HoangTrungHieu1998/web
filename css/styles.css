@@ -20,6 +20,7 @@
     --container-color: #fff;
     --border-color: hsl(0, 1%, 72%);
     --title-color-temp:rgb(45, 11, 240);
+    --section-title: rgb(250, 189, 72);
 
     /*Font and size*/
     --body-font: 'Poppins', sans-serif;
@@ -656,7 +657,7 @@ button{
 .section__title{
     font-size: var(--h2-font-size);
     margin-bottom: 1rem;
-    color: var(--title-color-temp);
+    color: var(--section-title);
 }
 
 .section__title span{
