@@ -103,6 +103,7 @@ img{
 }
 
 button{
+    background-color: #fff;
     font-family: var(--body-font);
     outline: none;
     border: none;
@@ -140,7 +141,7 @@ button{
 }
 
 .nav__logo:hover{
-    color: var(--first-color);
+    color: var(--section-title);
 }
 
 .logo{
@@ -188,7 +189,7 @@ button{
 }
 
 .scroll-header .nav__logo{
-    color: var(--text-color);
+    color: var(--section-title);
 }
 
 /*Active Link*/
@@ -216,7 +217,7 @@ button{
 }
 
 .home__title{
-    color: var(--container-color);
+    color: var(--section-title);
 }
 
 
@@ -919,7 +920,7 @@ button{
     .active-link{
         background: none;
         box-shadow: none;
-        color: var(--first-color);
+        color: var(--section-title);
         font-weight: var(--font-medium);
     }
 
@@ -928,7 +929,7 @@ button{
     }
 
     .scroll-header .active-link{
-        color: var(--first-color);
+        color: var(--section-title);
     }
 
     .nav__button{
