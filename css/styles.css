@@ -202,7 +202,7 @@ button{
 
 /*Home*/
 .home{
-    background-image: url('../image/bg.jpg');
+    background-image: url('../image/halong.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -574,7 +574,7 @@ button{
 }
 
 .footer__title{
-    color: var(--first-color);
+    color: var(--section-title);
     display: flex;
     justify-content: center;
 }
