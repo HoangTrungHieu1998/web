@@ -144,8 +144,8 @@ button{
 }
 
 .logo{
-    height: 40px;
-    width: 60px;
+    height: 150px;
+    width: 300px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -227,7 +227,7 @@ button{
 }
 
 .home__description{
-    text-align: left;
+    text-align: justify;
     color: var(--container-color);
     margin-bottom: 2rem;
     /* font-weight: bold; */
@@ -266,11 +266,13 @@ button{
 }
 
 .partner__title{
+	text-align: center;
     font-size: var(--h3-font-size);
     margin-bottom: .75rem;
 }
 
 .partner__description{
+	text-align: center;
     font-size: var(--small-font-size);
 }
 
@@ -305,6 +307,78 @@ button{
 
 .swiper-button-next{
     right: calc(50%-3rem);
+}
+
+/*Founder*/
+.founder__container{
+    row-gap: 2rem;
+}
+
+.founder__image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.founder__orbe{
+    width: 266px;
+    height: 316px;
+    background-color: hsl(228, 24%, 97%);
+    border-radius: 16px 16px 16px 16px;
+}
+
+.founder__img{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px 12px 12px 12px;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+
+.founder__description{
+    text-align: justify;
+    font-size: var(--small-font-size);
+    margin-bottom: 2.5rem;
+}
+
+.founder__card{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 1.25rem .75rem;
+}
+
+.founder__card-box{
+    background-color: var(--body-color);
+    border: 2px solid var(--border-color);
+    padding: 1.25rem .75rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.founder__card-info{
+    display: flex;
+    align-items: flex-start;
+    column-gap: .75rem;
+    margin-bottom: 1.25rem;
+}
+
+.founder__card i{
+    padding: 6px;
+    background-color: var(--first-color-lighten);
+    border-radius: 6px;
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.founder__card-title{
+    font-size: var(--normal-font-size);
+}
+
+.founder__card-description{
+    font-size: var(--small-font-size);
 }
 
 /*Services*/
@@ -411,6 +485,11 @@ button{
     padding: .1rem 2.5rem 0 3.75rem;
 }
 
+.founder__accordion-list{
+    font-size: var(--small-font-size);
+    padding: .1rem 2.5rem 0 3.75rem;
+}
+
 /*Rotate service icon and add shadows*/
 .accordion-open{
     box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
@@ -443,7 +522,7 @@ button{
     width: 266px;
     height: 316px;
     background-color: hsl(228, 24%, 97%);
-    border-radius: 135px 135px 16px 16px;
+    border-radius: 16px 16px 16px 16px;
 }
 
 .contact__img{
@@ -706,6 +785,12 @@ button{
         width: 80%;
         align-items: center;
     }
+
+    .founder__card-box{
+        margin-left: 1.2rem;
+        width: 80%;
+        align-items: center;
+    }
     
 }
 
@@ -755,6 +840,12 @@ button{
         width: 90%;
         align-items: center;
     }
+
+    .founder__card-box{
+        margin-left: 1.2rem;
+        width: 90%;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 351px) {
@@ -783,6 +874,12 @@ button{
     }
 
     .contact__card-box{
+        margin-left: 2rem;
+        width: 80%;
+        align-items: center;
+    }
+
+    .founder__card-box{
         margin-left: 2rem;
         width: 80%;
         align-items: center;
@@ -820,6 +917,12 @@ button{
         width: 70%;
         align-items: center;
     }
+
+    .founder__card-box{
+        margin-left: 3.5rem;
+        width: 70%;
+        align-items: center;
+    }
     
 }
 
@@ -853,6 +956,12 @@ button{
         width: 70%;
         align-items: center;
     }
+
+    .founder__card-box{
+        margin-left: 4rem;
+        width: 70%;
+        align-items: center;
+    }
     
 }
 
@@ -863,12 +972,17 @@ button{
     }
 
     .service__container,
+    .founder__container,
     .contact__container{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
     }
 
     .contact__image{
+        order: 1;
+    }
+
+    .founder__image{
         order: 1;
     }
 
@@ -958,12 +1072,14 @@ button{
     }
 
     .service__img,
+    .founder__img,
     .contact__img{
         width: 461px;
         height: 601px;
     }
 
     .service__description,
+    .founder__description,
     .contact__description{
         font-size: var(--normal-font-size);
         margin-bottom: 2.5rem;
@@ -992,10 +1108,16 @@ button{
     body{
         zoom: 1.5;
     }
+	.logo{
+        zoom: 1.5;
+    }
 }
 
 @media screen and (min-width: 3840px) {
     body{
+        zoom: 3;
+    }
+	.logo{
         zoom: 3;
     }
 }
